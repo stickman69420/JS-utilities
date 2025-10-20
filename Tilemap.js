@@ -5,4 +5,5 @@ export function Tilemap(Context,Tileset,Tilemap) {
 	fetch(Tilemap)
     .then((response) => response.json())
     .then((json) => Map=json);
+	return([Map,Set])
 }
