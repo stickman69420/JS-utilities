@@ -1,7 +1,13 @@
 <!doctype HTML>
 <html>
-<script>
-import * from Tilemap.js
-Tilemap("","",)
+<body>
+<p id="e"></p>
+</body>
+<script type="module">
+import { Tilemap } from Tilemap.js;
+async function Main(){
+e.innerHTML=JSON.stringify(await Tilemap("","./Green.webp","./Tilemap.json"));
+};
+Main()
 </script>
 </html>
