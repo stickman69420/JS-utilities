@@ -2,12 +2,12 @@
 <html>
 <body>
 <p id="e"></p>
-</body>
-<script type="module">
-import { Tilemap } from Tilemap.js;
+<script type="module" src="./Tilemap.js"></script>
+<script>
 async function Main(){
 e.innerHTML=JSON.stringify(await Tilemap("","./Green.webp","./Tilemap.json"));
 };
 Main()
 </script>
+</body>
 </html>
